@@ -15,24 +15,22 @@
 
 def scrabble(word):
     # Здесь нужно написать код
+    letter_dict = {
+        1: 'авеёинорст',
+        2: 'дклмпу',
+        3: 'бгья',
+        4: 'йы',
+        5: 'жзхцч',
+        8: 'фшэю',
+        10: 'щ',
+        15: 'ъ'
+    }
     points = 0
-    for letter in word:
-        if letter in 'авеёинорст':
-            points += 1
-        elif letter in 'дклмпу':
-            points += 2
-        elif letter in 'бгья':
-            points += 3
-        elif letter in 'йы':
-            points += 4
-        elif letter in 'жзхцч':
-            points += 5
-        elif letter in 'фшэю':
-            points += 8
-        elif letter == 'щ':
-            points += 10
-        elif letter == 'ъ':
-            points += 15
+    for i in word:
+        for key, letter in letter_dict.items():
+            if i in letter:
+                points += key
+    print(points)
     return points
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
