@@ -13,7 +13,6 @@ def multiplication_chain(num):
     count_multy = 0
     while len(num_s) > 1:
         num_z = 1
-        num_o = 1
         for num_o in num_s:
             num_z = num_z * int(num_o)
         num_s = str(num_z)

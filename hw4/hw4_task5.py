@@ -20,7 +20,6 @@ def josephus_task(num_people, kill_num):
         index = (index + kill_num - 1) % len(p)
         p.pop(index)
     return p[0]
-    return survivor
 
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
