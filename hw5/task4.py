@@ -30,7 +30,6 @@ def scrabble(word):
         for key, letter in letter_dict.items():
             if i in letter:
                 points += key
-    print(points)
     return points
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
